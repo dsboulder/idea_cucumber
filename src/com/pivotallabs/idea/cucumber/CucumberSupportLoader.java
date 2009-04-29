@@ -16,6 +16,7 @@ public class CucumberSupportLoader implements ApplicationComponent {
   public static final FeatureFileType CUCUMBER_FEATURE = new FeatureFileType();
 
   public CucumberSupportLoader() {
+    
   }
 
   public static CucumberSupportLoader getInstance() {

@@ -38,8 +38,13 @@ DecIntegerLiteral = 0 | [1-9][0-9]*
 
 %%
 #.*\n                           { return FeatureTokenTypes.COMMENT; }
+[A-Za-z0-9]+            { return FeatureTokenTypes.WORD; }
+{WhiteSpace}             { return FeatureTokenTypes.WORD; }
+.              { return FeatureTokenTypes.WORD; }
+
 
 /* keywords */
+/*
 <SPACES> "Feature"                     { return FeatureTokenTypes.FEATURE; }
 <SPACES> "Background"                  { return FeatureTokenTypes.BACKGROUND; }
 <SPACES> "Scenario"                    { return FeatureTokenTypes.SCENARIO; }
@@ -72,3 +77,5 @@ DecIntegerLiteral = 0 | [1-9][0-9]*
 }
 
 . { /* ignored */ }
+*/
+

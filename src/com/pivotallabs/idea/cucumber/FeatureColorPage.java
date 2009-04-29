@@ -33,6 +33,8 @@ final class FeatureColorPage implements ColorSettingsPage {
     public FeatureColorPage() {
         attributeDescriptors.add(new AttributesDescriptor("Comment", FeatureHighligherColors.COMMENT));
         attributeDescriptors.add(new AttributesDescriptor("String", FeatureHighligherColors.STRING));
+        attributeDescriptors.add(new AttributesDescriptor("Keyword", FeatureHighligherColors.KEYWORD));
+        attributeDescriptors.add(new AttributesDescriptor("Number", FeatureHighligherColors.NUMBER));
     }
 
     @Nullable

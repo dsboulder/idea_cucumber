@@ -31,8 +31,16 @@ public final class FeatureSyntaxHighlighter extends SyntaxHighlighterBase {
         lexer = new FeatureLexer(project, virtualFile);
 
         fillMap(colors, FeatureHighligherColors.KEYWORD, FeatureTokenTypes.GIVEN);
+        fillMap(colors, FeatureHighligherColors.KEYWORD, FeatureTokenTypes.BACKGROUND);
+        fillMap(colors, FeatureHighligherColors.KEYWORD, FeatureTokenTypes.AND);
+        fillMap(colors, FeatureHighligherColors.KEYWORD, FeatureTokenTypes.BUT);
+        fillMap(colors, FeatureHighligherColors.KEYWORD, FeatureTokenTypes.EXAMPLES);
+        fillMap(colors, FeatureHighligherColors.KEYWORD, FeatureTokenTypes.SCENARIO);
+        fillMap(colors, FeatureHighligherColors.KEYWORD, FeatureTokenTypes.SCENARIO_OUTLINE);
+        fillMap(colors, FeatureHighligherColors.KEYWORD, FeatureTokenTypes.THEN);
         fillMap(colors, FeatureHighligherColors.COMMENT, FeatureTokenTypes.COMMENT);
         fillMap(colors, FeatureHighligherColors.STRING, FeatureTokenTypes.STRING_LITERAL);
+        fillMap(colors, FeatureHighligherColors.NUMBER, FeatureTokenTypes.INTEGER_LITERAL);
 //        fillMap(colors, FeatureTokenTypes.BRACKETS, FeatureHighligherColors.BRACKETS);
 //        fillMap(colors, FeatureTokenTypes.PARENTHESES, FeatureHighligherColors.PARENTHS);
 //        fillMap(colors, FeatureTokenTypes.ANGLE_BRACKETS, FeatureHighligherColors.ANGLE_BRACKETS);

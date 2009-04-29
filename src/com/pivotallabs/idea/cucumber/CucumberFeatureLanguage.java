@@ -3,6 +3,7 @@ package com.pivotallabs.idea.cucumber;
 import com.intellij.lang.Language;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.fileTypes.SyntaxHighlighter;
+import com.intellij.openapi.fileTypes.FileType;
 import com.intellij.openapi.vfs.VirtualFile;
 
 /**
@@ -22,4 +23,8 @@ public class CucumberFeatureLanguage extends Language {
     return new FeatureSyntaxHighlighter(project, virtualFile);
   }
 
+  @Override
+  public FileType getAssociatedFileType() {
+    return CucumberSupportLoader.getInstance().getFileType();
+  }
 }

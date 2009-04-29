@@ -10,6 +10,7 @@
   <component name="DependencyValidationManager">
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
+  <component name="EclipseCompilerSettings" />
   <component name="EclipseEmbeddedCompilerSettings">
     <option name="DEBUGGING_INFO" value="true" />
     <option name="GENERATE_NO_WARNINGS" value="true" />
@@ -43,12 +44,13 @@
     <option name="LOCALE" />
     <option name="OPEN_IN_BROWSER" value="true" />
   </component>
+  <component name="JikesSettings" />
   <component name="ProjectDetails">
     <option name="projectName" value="idea-cucumber" />
   </component>
   <component name="ProjectFileVersion" converted="true" />
   <component name="ProjectKey">
-    <option name="state" value="project:///Users/pivotal/workspace/idea_cucumber/.idea/misc.xml" />
+    <option name="state" value="project:///Users/stevend/Projects/idea-cucumber/.idea/misc.xml" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_5" assert-keyword="true" jdk-15="true" project-jdk-name="IDEA 9732" project-jdk-type="IDEA JDK">
     <output url="file://$PROJECT_DIR$/out" />
@@ -69,5 +71,6 @@
     <option name="mySupportsUserInfoFilter" value="true" />
   </component>
   <component name="WebServicesPlugin" addRequiredLibraries="true" />
+  <component name="masterDetails" />
 </project>
 
