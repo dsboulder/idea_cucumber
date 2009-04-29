@@ -32,6 +32,7 @@ public class CucumberSupportLoader implements ApplicationComponent {
       new Runnable() {
         public void run() {
           FileTypeManager.getInstance().registerFileType(CUCUMBER_FEATURE, new String[]{"feature"});
+          System.out.println("Registered file type");
         }
       }
     );

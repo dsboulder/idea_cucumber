@@ -19,7 +19,7 @@ public class FeatureFileType extends LanguageFileType {
 
   @NotNull
   public String getName() {
-    return "Cucumber Feature";
+    return "CucumberFeature";
   }
 
   @NotNull

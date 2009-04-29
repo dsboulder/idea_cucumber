@@ -18,5 +18,6 @@ public class FeatureLexer extends FlexAdapter {
 
   public FeatureLexer(Project project, VirtualFile virtualFile) {
     super(new FeatureFlexLexer((Reader)null));
+    System.out.println("Instantiating 'FeatureSyntaxHighlighter': "+project+" "+virtualFile);
   }
 }

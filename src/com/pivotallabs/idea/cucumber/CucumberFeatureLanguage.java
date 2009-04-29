@@ -14,7 +14,8 @@ import com.intellij.openapi.vfs.VirtualFile;
  */
 public class CucumberFeatureLanguage extends Language {
   public CucumberFeatureLanguage() {
-    super("CucumberFeature", "text/x-feature"); 
+    super("CucumberFeature");
+    System.out.println("Instantiating 'CucumberFeatureLanguage'");
   }
 
   public SyntaxHighlighter getSyntaxHighlighter(Project project, VirtualFile virtualFile) {
