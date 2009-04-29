@@ -3,6 +3,7 @@ package com.pivotallabs.idea.cucumber;
 import com.intellij.lang.Language;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.fileTypes.SyntaxHighlighter;
+import com.intellij.openapi.vfs.VirtualFile;
 
 /**
  * Created by IntelliJ IDEA.
@@ -16,8 +17,8 @@ public class CucumberFeatureLanguage extends Language {
     super("CucumberFeature", "text/x-feature"); 
   }
 
-  public SyntaxHighlighter getSyntaxHighlighter(Project project) {
-    return new FeatureSyntaxHighligher();
+  public SyntaxHighlighter getSyntaxHighlighter(Project project, VirtualFile virtualFile) {
+    return new FeatureSyntaxHighlighter(project, virtualFile);
   }
 
 }

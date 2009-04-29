@@ -10,6 +10,9 @@
       <component>
           <implementation-class>com.pivotallabs.idea.cucumber.CucumberSupportLoader</implementation-class>
       </component>
+      <component>
+          <implementation-class>com.pivotallabs.idea.cucumber.FeatureEditorColorsManager</implementation-class>
+      </component>
   </application-components>
 
   <project-components>

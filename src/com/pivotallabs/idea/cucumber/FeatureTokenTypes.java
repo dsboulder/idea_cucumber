@@ -22,5 +22,8 @@ public interface FeatureTokenTypes {
   IElementType THEN = new FeatureElementType("THEN");
   IElementType AND = new FeatureElementType("AND");
   IElementType BUT = new FeatureElementType("BUT");
+  IElementType WORD = new FeatureElementType("WORD");
+  IElementType COMMENT = new FeatureElementType("COMMENT");
+  IElementType NEWLINE = new FeatureElementType("NEWLINE");
 
 }

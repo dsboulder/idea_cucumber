@@ -24,7 +24,7 @@ public class FeatureFileType extends LanguageFileType {
 
   @NotNull
   public String getDescription() {
-    return "A plaintext cucumber feature file.";
+    return "Cucumber Feature plaintext file.";
   }
 
   @NotNull

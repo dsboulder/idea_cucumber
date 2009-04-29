@@ -1,6 +1,8 @@
 package com.pivotallabs.idea.cucumber;
 
 import com.intellij.lexer.*;
+import com.intellij.openapi.project.Project;
+import com.intellij.openapi.vfs.VirtualFile;
 
 import java.io.Reader;
 
@@ -14,7 +16,7 @@ import java.io.Reader;
 public class FeatureLexer extends FlexAdapter {
 
 
-  public FeatureLexer() {
+  public FeatureLexer(Project project, VirtualFile virtualFile) {
     super(new FeatureFlexLexer((Reader)null));
   }
 }

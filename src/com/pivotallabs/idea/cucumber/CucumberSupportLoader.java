@@ -18,6 +18,15 @@ public class CucumberSupportLoader implements ApplicationComponent {
   public CucumberSupportLoader() {
   }
 
+  public static CucumberSupportLoader getInstance() {
+      return ApplicationManager.getApplication().getComponent(CucumberSupportLoader.class);
+  }
+
+  public FeatureFileType getFileType() {
+    return CUCUMBER_FEATURE;
+  }
+
+
   public void initComponent() {
     ApplicationManager.getApplication().runWriteAction(
       new Runnable() {
