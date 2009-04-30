@@ -5,6 +5,7 @@ import com.intellij.openapi.options.colors.AttributesDescriptor;
 import com.intellij.openapi.options.colors.ColorDescriptor;
 import com.intellij.openapi.editor.colors.TextAttributesKey;
 import com.intellij.openapi.fileTypes.SyntaxHighlighter;
+import com.intellij.openapi.fileTypes.SyntaxHighlighterFactory;
 
 import java.util.Set;
 import java.util.HashSet;
@@ -73,8 +74,8 @@ final class FeatureColorPage implements ColorSettingsPage {
 
     @NotNull
     public SyntaxHighlighter getHighlighter() {
-      
-        return ((CucumberFeatureLanguage)CucumberSupportLoader.getInstance().getFileType().getLanguage()).getSyntaxHighlighter(null, null);
+      return SyntaxHighlighterFactory.getSyntaxHighlighter(CucumberSupportLoader.getInstance().getFileType().getLanguage(), null, null);
+//        return ((CucumberFeatureLanguage)CucumberSupportLoader.getInstance().getFileType().getLanguage()).getSyntaxHighlighter(null, null);
     }
 
     @Nullable
